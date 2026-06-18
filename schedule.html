@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Schedule | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Full class schedule for Chiltern Academy of Martial Arts — Boxing, Kung Fu, Tai Chi, Judo and Fitness across the Chilterns." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link ">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link active">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="section-tag">📅 All Classes</div>
+    <h1 class="page-hero-title">Class <em style="color:var(--red)">Schedule</em></h1>
+    <p class="page-hero-sub">Find your perfect class across our locations in the Chilterns</p>
+  </div>
+
+  <div class="schedule-page">
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;justify-content:center">
+      <a href="bookings.html" class="btn btn-primary" id="sched-book-btn">Book a Free Trial</a>
+      <a href="tel:07545991293" class="btn btn-ghost" id="sched-call-btn">📞 07545 991293</a>
+    </div>
+
+    <div class="schedule-table-wrap">
+      <table class="schedule-table" id="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Class</th>
+            <th>Level</th>
+            <th>Location</th>
+            <th>Instructor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>1:30pm – 2:30pm</td><td><span class="badge-discipline">🌀 Tai Chi</span></td><td>All Ages</td><td>Tylers Green Village Hall</td><td>Sifu Mark Lane</td></tr>
+          <tr><td>Monday</td><td>6:30pm – 7:10pm</td><td><span class="badge-discipline">🥋 Kung Fu (Juniors 8-15)</span></td><td>Ages 8–15</td><td>Restore Hope, Amersham</td><td>CAMA Instructor</td></tr>
+          <tr><td>Monday</td><td>7:30pm – 8:30pm</td><td><span class="badge-discipline">🥋 Kung Fu (Adult)</span></td><td>Adults</td><td>Restore Hope, Amersham</td><td>CAMA Instructor</td></tr>
+          <tr><td>Tuesday</td><td>4:45pm – 5:25pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 4-7)</span></td><td>Ages 4–7</td><td>Holmer Green Village Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Tuesday</td><td>5:40pm – 6:20pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 8-15)</span></td><td>Ages 8–15</td><td>Holmer Green Village Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Tuesday</td><td>6:30pm – 7:15pm</td><td><span class="badge-discipline">🥊 SparX Boxing</span></td><td>All Levels</td><td>Holmer Green Village Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Wednesday</td><td>2:00pm – 3:00pm</td><td><span class="badge-discipline">🌀 Tai Chi</span></td><td>All Ages</td><td>Hughenden Valley Garden Village</td><td>Sifu Mark Lane</td></tr>
+          <tr><td>Wednesday</td><td>6:00pm – 6:45pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 7-15)</span></td><td>Ages 7–15</td><td>Little Chalfont</td><td>CAMA Instructor</td></tr>
+          <tr><td>Wednesday</td><td>6:30pm – 7:10pm</td><td><span class="badge-discipline">🥋 Kung Fu (Juniors 8-12)</span></td><td>Ages 8–12</td><td>Hazlemere Memorial Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Wednesday</td><td>7:30pm – 8:30pm</td><td><span class="badge-discipline">🥋 Kung Fu (Adult)</span></td><td>Adults</td><td>Hazlemere Memorial Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Thursday</td><td>11:15am – 12:15pm</td><td><span class="badge-discipline">🌀 Tai Chi</span></td><td>All Ages</td><td>Tylers Green Village Hall</td><td>Sifu Mark Lane</td></tr>
+          <tr><td>Thursday</td><td>2:00pm – 3:00pm</td><td><span class="badge-discipline">🌀 Tai Chi</span></td><td>All Ages</td><td>Hazlemere Memorial Hall</td><td>Sifu Mark Lane</td></tr>
+          <tr><td>Thursday</td><td>5:30pm – 6:30pm</td><td><span class="badge-discipline">🏆 Judo (Juniors)</span></td><td>Ages 7–15</td><td>The Curzon Centre, Beaconsfield</td><td>Victor Webber</td></tr>
+          <tr><td>Thursday</td><td>7:15pm – 8:30pm</td><td><span class="badge-discipline">🥋 Kung Fu (Adult)</span></td><td>Adults</td><td>The Curzon Centre, Beaconsfield</td><td>CAMA Instructor</td></tr>
+          <tr><td>Friday</td><td>5:15pm – 5:55pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 4-6)</span></td><td>Ages 4–6</td><td>Little Chalfont</td><td>CAMA Instructor</td></tr>
+          <tr><td>Friday</td><td>6:05pm – 6:45pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 7-10)</span></td><td>Ages 7–10</td><td>Little Chalfont</td><td>CAMA Instructor</td></tr>
+          <tr><td>Friday</td><td>6:55pm – 7:35pm</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 11+)</span></td><td>Ages 11+</td><td>Little Chalfont</td><td>CAMA Instructor</td></tr>
+          <tr><td>Saturday</td><td>9:30am – 10:15am</td><td><span class="badge-discipline">🥊 SparX Boxing</span></td><td>All Levels</td><td>Hazlemere Memorial Hall</td><td>CAMA Instructor</td></tr>
+          <tr><td>Saturday</td><td>10:30am – 11:15am</td><td><span class="badge-discipline">🥋 Kung Fu (Ages 5-15)</span></td><td>Ages 5–15</td><td>Hazlemere Memorial Hall</td><td>CAMA Instructor</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:3rem;padding:2rem;background:var(--dark-3);border:1px solid rgba(200,16,46,0.2);border-radius:var(--radius-lg);text-align:center">
+      <h3 style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:2px;margin-bottom:0.75rem;color:var(--white)">Not Sure Which Class to Try?</h3>
+      <p style="font-size:0.9rem;color:var(--light-mid);margin-bottom:1.5rem">Call us and we'll help you find the perfect class for your goals and schedule</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="bookings.html" class="btn btn-primary" id="sched-bottom-book">Book a Free Trial</a>
+        <a href="tel:07545991293" class="btn btn-ghost" id="sched-bottom-call">📞 07545 991293</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Classes</h4><ul><li><a href="boxing.html">Boxing</a></li><li><a href="kungfu.html">Kung Fu</a></li><li><a href="taichi.html">Tai Chi</a></li><li><a href="judo.html">Judo</a></li><li><a href="fitness.html">Fitness</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

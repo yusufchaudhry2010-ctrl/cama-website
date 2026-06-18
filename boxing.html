@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boxing | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Spark Fitness Boxing at Chiltern Academy of Martial Arts. Classes for all levels — kids and adults in Holmer Green and Hazlemere." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link" id="nav-pt">Personal Training</a></li>
+        <li><a href="sparx-boxing.html" class="nav-link" id="nav-sparx">SparX Boxing</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link" id="nav-martial-arts">Martial Arts &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html" id="nav-adult-kf">&#x1F94B; Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html" id="nav-kids-kf">&#x1F466; Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html" id="nav-kids-judo">&#x1F3C6; Kids Judo</a></li>
+            <li><a href="taichi.html" id="nav-taichi">&#x1F300; Tai Chi</a></li>
+          </ul>
+        </li>
+        <li><a href="instructors.html" class="nav-link" id="nav-instructors">About</a></li>
+        <li><a href="schedule.html" class="nav-link" id="nav-schedule">Classes</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta" id="nav-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="boxing_class.png" alt="Boxing at CAMA" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.95) 40%,rgba(10,10,10,0.4) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">🥊 Spark Fitness Boxing</div>
+      <h1 class="discipline-hero-title">BOXING</h1>
+      <p class="discipline-hero-desc">Learn to punch with power and precision. Our boxing programme builds fitness, confidence and real striking skill — for all ages and levels.</p>
+      <a href="bookings.html" class="btn btn-primary" id="boxing-book-btn">Book a Free Trial</a>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+        <h2>What is Spark Fitness Boxing?</h2>
+        <p>Our boxing programme — Spark Fitness Boxing — is designed for all levels. Whether you're a complete beginner or an experienced competitor, our coaches will develop your technique, footwork, combinations and defensive skill.</p>
+        <p>Boxing at CAMA develops discipline, physical fitness and mental toughness. We work with both children and adults, with dedicated junior sessions for younger students.</p>
+        <p>Under the guidance of our experienced coaching team including <strong style="color:var(--white)">Stefan Saleem</strong> and <strong style="color:var(--white)">Karl Harcourt</strong>, you'll develop real boxing skills in a safe, supportive environment.</p>
+        <div style="margin-top:2rem">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:2px;margin-bottom:1rem;color:var(--white)">What You'll Learn</h3>
+          <div class="about-disciplines">
+            <div class="discipline-pill">🥊 Proper stance & footwork</div>
+            <div class="discipline-pill">💥 Power combinations</div>
+            <div class="discipline-pill">🛡️ Defence & head movement</div>
+            <div class="discipline-pill">❤️ Cardiovascular fitness</div>
+            <div class="discipline-pill">🧠 Mental toughness</div>
+            <div class="discipline-pill">👦 Junior sessions</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule-card">
+        <h3>📅 Class Schedule</h3>
+        <div class="schedule-item">
+          <span class="schedule-day">Wednesday</span>
+          <span class="schedule-time">7:00pm – 8:30pm</span>
+          <span class="schedule-location">Holmer Green Village Hall</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Friday</span>
+          <span class="schedule-time">6:00pm – 7:30pm</span>
+          <span class="schedule-location">Hazlemere Community Centre</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Friday</span>
+          <span class="schedule-time">4:00pm – 5:00pm</span>
+          <span class="schedule-location">Junior Class</span>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center" id="boxing-sched-book">Book Now</a>
+        </div>
+        <div style="margin-top:1rem;padding:1rem;background:var(--dark-4);border-radius:8px">
+          <p style="font-size:0.8rem;color:var(--light-mid);line-height:1.6">📞 Questions? Call us on <a href="tel:07545991293" style="color:var(--gold);font-weight:600">07545 991293</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Classes</h4><ul><li><a href="boxing.html">Boxing</a></li><li><a href="kungfu.html">Kung Fu</a></li><li><a href="taichi.html">Tai Chi</a></li><li><a href="judo.html">Judo</a></li><li><a href="fitness.html">Fitness</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

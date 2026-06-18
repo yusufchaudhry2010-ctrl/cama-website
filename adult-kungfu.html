@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adult Kung Fu | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Adult Wing Chun Kung Fu classes at CAMA. Wong Shun-Leung lineage, direct from Bruce Lee's instructor. Black Sash excellence for all adults." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .benefits-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 2rem 0; }
+    .benefit-item { display: flex; align-items: flex-start; gap: 0.75rem; padding: 1rem; background: var(--dark-3); border: 1px solid rgba(200,16,46,0.12); border-radius: 10px; }
+    .benefit-icon { font-size: 1.4rem; flex-shrink: 0; }
+    .benefit-text strong { display: block; font-size: 0.85rem; color: var(--white); margin-bottom: 0.15rem; }
+    .benefit-text span { font-size: 0.78rem; color: var(--light-mid); }
+    .pricing-card { background: linear-gradient(135deg, var(--dark-3), var(--dark-4)); border: 1px solid rgba(212,160,23,0.3); border-radius: var(--radius-lg); padding: 2.5rem; margin-bottom: 1.5rem; }
+    .pricing-card h3 { font-family: var(--font-display); font-size: 1.6rem; letter-spacing: 2px; color: var(--gold); margin-bottom: 1.5rem; }
+    .price-row { display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .price-row:last-child { border-bottom: none; }
+    .price-label { font-size: 0.88rem; color: var(--light); }
+    .price-amount { font-family: var(--font-display); font-size: 1.6rem; color: var(--white); }
+    .price-period { font-size: 0.68rem; color: var(--light-mid); letter-spacing: 1px; text-transform: uppercase; margin-left: 0.25rem; }
+    .quote-block { border-left: 3px solid var(--red); padding: 1.2rem 1.5rem; background: rgba(200,16,46,0.05); border-radius: 0 10px 10px 0; margin: 2rem 0; font-style: italic; color: var(--light); font-size: 0.95rem; line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link active">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="kungfu_class.png" alt="Adult Kung Fu" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 80%) 35%,rgba(10,10,10,0.1) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">🥋 Wong Shun-Leung Wing Chun</div>
+      <h1 class="discipline-hero-title">ADULT<br/>KUNG FU</h1>
+      <p class="discipline-hero-desc">Join adults of all shapes, sizes and ages working toward Black Sash Excellence — in the art, and in every area of their lives.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="bookings.html" class="btn btn-primary" id="adult-kf-book-btn">Book a Free Trial</a>
+        <a href="tel:07545991293" class="btn btn-ghost" id="adult-kf-call-btn">📞 07545 991293</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+        <h2>Transform Your Life Through Martial Arts</h2>
+
+        <p>Adults of all shapes, sizes, and ages come to us and work to achieve <strong style="color:var(--gold)">BLACK SASH EXCELLENCE</strong> in all areas of their lives. For many, their training contributes to a feeling of control in their life — control of their HEALTH, SAFETY, MIND, and SPIRIT.</p>
+
+        <p>Whether you're interested in <strong style="color:var(--white)">FITNESS, SELF-DEFENCE,</strong> or just <strong style="color:var(--white)">LEARNING SOMETHING NEW</strong>, we're here to help you. And you don't have to be in shape to start — the adult classes are designed to help you get into shape, gradually and safely.</p>
+
+        <p>We teach <strong style="color:var(--gold)">Wong Shun-Leung Wing Chun (Ving Tsun)</strong>. WSL was the direct student of Grandmaster Ip Man and took over the Kwoon after Ip Man's passing. He also trained Bruce Lee along with Ip Man before Bruce left Hong Kong to the USA.</p>
+
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:2px;margin:2rem 0 1rem;color:var(--white)">Physical &amp; Mental Benefits</h3>
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">💪</div>
+            <div class="benefit-text"><strong>Increased Stamina &amp; Strength</strong><span>Build real functional fitness through martial training</span></div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🧘</div>
+            <div class="benefit-text"><strong>Reduced Stress</strong><span>Focused training clears the mind and relieves tension</span></div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🦁</div>
+            <div class="benefit-text"><strong>New levels of Confidence</strong><span>Know you can handle yourself in any situation</span></div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">⚖️</div>
+            <div class="benefit-text"><strong>Weight Loss</strong><span>High-intensity martial training burns calories and transforms body composition</span></div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🎯</div>
+            <div class="benefit-text"><strong>Improved Concentration</strong><span>Martial arts demands and builds laser-sharp focus</span></div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-icon">🛡️</div>
+            <div class="benefit-text"><strong>Resilience</strong><span>Develop mental toughness that extends far beyond the dojo</span></div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.2rem 1.5rem;background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.2);border-radius:12px">
+          <p style="font-size:0.85rem;color:var(--light-mid)">📞 Call or message us on <a href="tel:07545991293" style="color:var(--gold);font-weight:700">07545 991293</a> or <a href="bookings.html" style="color:var(--gold);font-weight:700">register your interest here</a></p>
+        </div>
+      </div>
+
+      <div>
+        <div class="pricing-card">
+          <h3>💰 Membership</h3>
+          <div class="price-row">
+            <span class="price-label">1 Class per Week</span>
+            <span><span class="price-amount">£45</span><span class="price-period">/ month</span></span>
+          </div>
+          <div class="price-row">
+            <span class="price-label">Unlimited Training</span>
+            <span><span class="price-amount">£55–£60</span><span class="price-period">/ month</span></span>
+          </div>
+          <div style="font-size:0.75rem;color:var(--light-mid);padding:0.5rem 0;font-style:italic">Contact us to confirm current unlimited rate</div>
+          <div class="price-row">
+            <span class="price-label">Private Lessons</span>
+            <span style="font-size:0.85rem;color:var(--gold);font-weight:600">Discounts for members</span>
+          </div>
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.5rem" id="adult-kf-price-book">Book Free Trial</a>
+        </div>
+
+        <div class="schedule-card">
+          <h3>📅 Class Schedule</h3>
+          <div class="schedule-item">
+            <span class="schedule-day">Monday</span>
+            <span class="schedule-time">7:30pm – 8:30pm</span>
+            <span class="schedule-location">Restore Hope, Amersham</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Tuesday</span>
+            <span class="schedule-time">4:45pm – 5:25pm (ages 4-7)</span>
+            <span class="schedule-location">Holmer Green Village Hall</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Tuesday</span>
+            <span class="schedule-time">5:40pm – 6:20pm (ages 8-15)</span>
+            <span class="schedule-location">Holmer Green Village Hall</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Wednesday</span>
+            <span class="schedule-time">6:00pm – 6:45pm (ages 7-15)</span>
+            <span class="schedule-location">Little Chalfont</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Wednesday</span>
+            <span class="schedule-time">6:30pm – 7:10pm (juniors 8-12)</span>
+            <span class="schedule-location">Hazlemere Memorial Hall</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Wednesday</span>
+            <span class="schedule-time">7:30pm – 8:30pm (adult)</span>
+            <span class="schedule-location">Hazlemere Memorial Hall</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Thursday</span>
+            <span class="schedule-time">7:15pm – 8:30pm (adult)</span>
+            <span class="schedule-location">The Curzon Centre, Beaconsfield</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Friday</span>
+            <span class="schedule-time">5:15pm – 5:55pm (ages 4-6)</span>
+            <span class="schedule-location">Little Chalfont</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Friday</span>
+            <span class="schedule-time">6:05pm – 6:45pm (ages 7-10)</span>
+            <span class="schedule-location">Little Chalfont</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Friday</span>
+            <span class="schedule-time">6:55pm – 7:35pm (ages 11+)</span>
+            <span class="schedule-location">Little Chalfont</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Saturday</span>
+            <span class="schedule-time">10:30am – 11:15am (ages 5-15)</span>
+            <span class="schedule-location">Hazlemere Memorial Hall</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Martial Arts</h4><ul><li><a href="adult-kungfu.html">Adult Kung Fu</a></li><li><a href="kids-kungfu.html">Kids Kung Fu</a></li><li><a href="kids-judo.html">Kids Judo</a></li><li><a href="taichi.html">Tai Chi</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="personal-training.html">Personal Training</a></li><li><a href="sparx-boxing.html">SparX Boxing</a></li><li><a href="instructors.html">About Us</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>✉️ <a href="mailto:chilternacademyofma@gmail.com">chilternacademyofma@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

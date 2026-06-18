@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Membership | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Contact Chiltern Academy of Martial Arts. Phone 07545 991293 or email chilternacademyofma@gmail.com. View all membership options and pricing." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .membership-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
+    .membership-card { background: var(--dark-3); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); padding: 1.5rem; transition: all var(--transition); }
+    .membership-card:hover { border-color: rgba(200,16,46,0.3); transform: translateY(-4px); box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+    .membership-card h4 { font-family: var(--font-display); font-size: 1rem; letter-spacing: 2px; color: var(--gold); margin-bottom: 0.5rem; text-transform: uppercase; }
+    .membership-price { font-family: var(--font-display); font-size: 2rem; color: var(--white); line-height: 1; }
+    .membership-price-sub { font-size: 0.65rem; color: var(--light-mid); letter-spacing: 1px; text-transform: uppercase; }
+    .membership-card a { display: block; margin-top: 1rem; font-size: 0.75rem; font-weight: 700; color: var(--red); letter-spacing: 1px; text-transform: uppercase; transition: color var(--transition); }
+    .membership-card a:hover { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link ">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="section-tag">Get in Touch</div>
+    <h1 class="page-hero-title">Contact <em style="color:var(--red)">&amp; Membership</em></h1>
+    <p class="page-hero-sub">Ready to start your journey? Get in touch — we'd love to hear from you</p>
+  </div>
+
+  <div style="max-width:1100px;margin:0 auto;padding:5rem 2rem">
+    
+    <!-- Contact Details -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:5rem;align-items:start">
+      <div>
+        <div class="section-tag">Reach Us</div>
+        <h2 style="font-family:var(--font-display);font-size:2.5rem;letter-spacing:2px;color:var(--white);margin-bottom:2rem">Contact Details</h2>
+        
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <a href="tel:07545991293" style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);transition:all var(--transition);color:var(--white)" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'" id="contact-phone">
+            <span style="font-size:1.5rem">📞</span>
+            <div>
+              <div style="font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--light-mid);margin-bottom:0.2rem">Phone / WhatsApp</div>
+              <div style="font-family:var(--font-display);font-size:1.4rem;letter-spacing:2px;color:var(--white)">07545 991293</div>
+            </div>
+          </a>
+          <a href="mailto:chilternacademyofma@gmail.com" style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);transition:all var(--transition);color:var(--white)" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'" id="contact-email">
+            <span style="font-size:1.5rem">✉️</span>
+            <div>
+              <div style="font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--light-mid);margin-bottom:0.2rem">Email</div>
+              <div style="font-size:0.9rem;color:var(--white)">chilternacademyofma@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:1rem;padding:1.2rem 1.5rem;background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);transition:all var(--transition);color:var(--white)" onmouseover="this.style.borderColor='rgba(200,16,46,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.06)'" id="contact-facebook">
+            <span style="font-size:1.5rem">👥</span>
+            <div>
+              <div style="font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--light-mid);margin-bottom:0.2rem">Facebook</div>
+              <div style="font-size:0.9rem;color:var(--white)">Find us on Facebook</div>
+            </div>
+          </a>
+        </div>
+
+        <div style="margin-top:2rem">
+          <a href="bookings.html" class="btn btn-primary btn-large" id="contact-book-btn">Book a Free Trial</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-tag">Unsure Which Option?</div>
+        <div style="padding:1.5rem;background:var(--dark-3);border:1px solid rgba(212,160,23,0.2);border-radius:var(--radius-lg)">
+          <p style="font-size:0.9rem;color:var(--light-mid);line-height:1.8;margin-bottom:1rem">If you are unsure which is the correct option for you, contact us on <strong style="color:var(--white)">07545 991293</strong> and we'll help you find the right class.</p>
+          <p style="font-size:0.85rem;color:var(--light-mid);line-height:1.7">Below are the direct links to join the Academy via Direct Debit. Click the relevant option for your situation:</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Membership Options -->
+    <div class="section-tag" style="margin-bottom:1rem">Membership Options</div>
+    <h2 style="font-family:var(--font-display);font-size:2.5rem;letter-spacing:2px;color:var(--white);margin-bottom:0.5rem">Join the <em style="color:var(--red)">Academy</em></h2>
+    <p style="font-size:0.9rem;color:var(--light-mid);margin-bottom:0">All memberships are via monthly Direct Debit. Contact us if you need help choosing.</p>
+
+    <div class="membership-grid">
+      <div class="membership-card">
+        <h4>Senior Weekly Training</h4>
+        <div class="membership-price">£45</div>
+        <div class="membership-price-sub">per month · 1 class/week</div>
+        <a href="bookings.html" id="mem-senior-weekly">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Senior Unlimited Training</h4>
+        <div class="membership-price">£55</div>
+        <div class="membership-price-sub">per month · unlimited classes</div>
+        <a href="bookings.html" id="mem-senior-unlimited">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Junior Weekly Training</h4>
+        <div class="membership-price">£40</div>
+        <div class="membership-price-sub">per month · 1 class/week</div>
+        <a href="bookings.html" id="mem-junior-weekly">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Junior 2 Students Weekly</h4>
+        <div class="membership-price">£60</div>
+        <div class="membership-price-sub">per month · 2 siblings</div>
+        <a href="bookings.html" id="mem-junior-2">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Junior 3 Students Weekly</h4>
+        <div class="membership-price">£65</div>
+        <div class="membership-price-sub">per month · 3 siblings</div>
+        <a href="bookings.html" id="mem-junior-3">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Family Option (1 Adult + 2 Children)</h4>
+        <div class="membership-price">£85</div>
+        <div class="membership-price-sub">per month</div>
+        <a href="bookings.html" id="mem-family-2c">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Judo Junior Training</h4>
+        <div class="membership-price">£24</div>
+        <div class="membership-price-sub">per month</div>
+        <a href="bookings.html" id="mem-judo-junior">Set Up Direct Debit →</a>
+      </div>
+      <div class="membership-card">
+        <h4>Family Option (1 Adult + 1 Child)</h4>
+        <div class="membership-price">£72</div>
+        <div class="membership-price-sub">per month</div>
+        <a href="bookings.html" id="mem-family-1c">Set Up Direct Debit →</a>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1.5rem;background:var(--dark-3);border:1px solid rgba(212,160,23,0.15);border-radius:var(--radius);text-align:center">
+      <p style="font-size:0.85rem;color:var(--light-mid)">Need help choosing? Call us on <a href="tel:07545991293" style="color:var(--gold);font-weight:700">07545 991293</a> or email <a href="mailto:chilternacademyofma@gmail.com" style="color:var(--gold)">chilternacademyofma@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Martial Arts</h4><ul><li><a href="adult-kungfu.html">Adult Kung Fu</a></li><li><a href="kids-kungfu.html">Kids Kung Fu</a></li><li><a href="kids-judo.html">Kids Judo</a></li><li><a href="taichi.html">Tai Chi</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="personal-training.html">Personal Training</a></li><li><a href="sparx-boxing.html">SparX Boxing</a></li><li><a href="instructors.html">About Us</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>✉️ <a href="mailto:chilternacademyofma@gmail.com">chilternacademyofma@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

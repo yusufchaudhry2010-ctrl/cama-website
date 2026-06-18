@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Kung Fu | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Kids Kung Fu at CAMA — Wing Chun classes for children across Amersham, Beaconsfield, Hazlemere, Holmer Green and Little Chalfont. £40/month." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .locations-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; }
+    .location-card { background: var(--dark-3); border: 1px solid rgba(200,16,46,0.15); border-radius: var(--radius); padding: 1.2rem; }
+    .location-card h4 { font-family: var(--font-display); font-size: 1rem; letter-spacing: 2px; color: var(--gold); margin-bottom: 0.5rem; }
+    .location-card address { font-style: normal; font-size: 0.8rem; color: var(--light-mid); line-height: 1.7; }
+    .creed-list { list-style: none; padding: 0; margin: 1.2rem 0; }
+    .creed-list li { padding: 0.7rem 0 0.7rem 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.88rem; color: var(--light); line-height: 1.6; position: relative; }
+    .creed-list li::before { content: '☯'; position: absolute; left: 0; color: var(--red); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link active">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="kungfu_class.png" alt="Kids Kung Fu" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 80%) 35%,rgba(10,10,10,0.1) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">👦 Junior Programme · Black Belt Success System</div>
+      <h1 class="discipline-hero-title">KIDS<br/>KUNG FU</h1>
+      <p class="discipline-hero-desc">"My son absolutely loved the class and you made him feel so welcome." Build confidence, discipline and character through the martial arts.</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="bookings.html" class="btn btn-primary" id="kids-kf-book-btn">Book a Free Trial</a>
+        <a href="tel:07545991293" class="btn btn-ghost" id="kids-kf-call-btn">📞 07545 991293</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+
+        <div style="padding:1.5rem;background:rgba(200,16,46,0.06);border:1px solid rgba(200,16,46,0.2);border-radius:12px;margin-bottom:2rem">
+          <p style="font-size:1rem;color:var(--light);font-style:italic;line-height:1.7">"Thanks for the free trial. My son absolutely loved the class &amp; you made him feel so welcome. How do I sign up?"</p>
+          <cite style="font-size:0.78rem;color:var(--light-mid);font-style:normal">— Parent of a new student</cite>
+        </div>
+
+        <h2>The Black Belt Success System</h2>
+        <p>Central to our work in the junior programme is the <strong style="color:var(--gold)">BLACK BELT SUCCESS SYSTEM</strong>. The Black Belt is an extremely important achievement in the martial arts. It represents more than simply a physical skill — it is a symbol of maturity, experience, alertness, and knowledge.</p>
+
+        <p>The martial arts are a superb activity for developing both children and young adults. With the emphasis on <strong style="color:var(--white)">DISCIPLINE and COURTESY</strong>, we help our students to develop self-confidence and character by providing the necessary skills to stand up to peer pressure and other intimidating situations.</p>
+
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;letter-spacing:2px;margin:2rem 0 1rem;color:var(--white)">The Black Belt Creed</h3>
+        <p style="font-size:0.85rem;color:var(--light-mid);margin-bottom:0.75rem">We teach our junior students to honour the tenets of The Black Belt Creed:</p>
+        <ul class="creed-list">
+          <li>I promise to have a positive manner. To look after myself so that I am happy and strong.</li>
+          <li>I promise to have self discipline to bring out the best in myself and my friends.</li>
+          <li>I promise to use my new skills wisely and to be kind and considerate.</li>
+        </ul>
+
+        <div style="margin-top:1.5rem;padding:1.2rem 1.5rem;background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.2);border-radius:12px">
+          <p style="font-size:0.85rem;color:var(--light-mid)">Contact us now to see how CAMA can help with your child's development.</p>
+          <p style="margin-top:0.5rem;font-size:0.85rem">📞 <a href="tel:07545991293" style="color:var(--gold);font-weight:700">07545 991293</a></p>
+        </div>
+      </div>
+
+      <div>
+        <!-- Pricing -->
+        <div style="background:linear-gradient(90deg,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 80%),var(--dark-4));border:1px solid rgba(212,160,23,0.3);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1.5rem">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;letter-spacing:2px;color:var(--gold);margin-bottom:1.2rem">💰 Pricing</h3>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <span style="font-size:0.88rem;color:var(--light)">Monthly Membership</span>
+            <span style="font-family:var(--font-display);font-size:1.8rem;color:var(--white)">£40<span style="font-size:0.65rem;color:var(--light-mid);letter-spacing:1px;margin-left:4px">/ MONTH</span></span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0">
+            <span style="font-size:0.88rem;color:var(--light)">Sibling Discount</span>
+            <span style="color:var(--gold);font-weight:700;font-size:0.9rem">Available ✓</span>
+          </div>
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1rem" id="kids-kf-price-book">Book Free Trial</a>
+        </div>
+
+        <!-- Locations -->
+        <div class="schedule-card">
+          <h3>📍 Locations</h3>
+          <div class="locations-grid">
+            <div class="location-card">
+              <h4>Amersham</h4>
+              <address>Restore Hope<br/>Woodside Road<br/>Amersham HP6 6AN</address>
+            </div>
+            <div class="location-card">
+              <h4>Beaconsfield</h4>
+              <address>Curzon Centre<br/>43 Maxwell Road<br/>Beaconsfield HP9 1RG</address>
+            </div>
+            <div class="location-card">
+              <h4>Hazlemere</h4>
+              <address>Hazlemere Memorial Hall<br/>Amersham Road<br/>HP15 7QW</address>
+            </div>
+            <div class="location-card">
+              <h4>Holmer Green</h4>
+              <address>Holmer Green Village Hall<br/>The Common<br/>HP15 6XG</address>
+            </div>
+            <div class="location-card" style="grid-column:span 2">
+              <h4>Little Chalfont</h4>
+              <address>Little Chalfont Methodist Church<br/>Chalfont Avenue, Little Chalfont<br/>Amersham HP6 6RD</address>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Martial Arts</h4><ul><li><a href="adult-kungfu.html">Adult Kung Fu</a></li><li><a href="kids-kungfu.html">Kids Kung Fu</a></li><li><a href="kids-judo.html">Kids Judo</a></li><li><a href="taichi.html">Tai Chi</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="personal-training.html">Personal Training</a></li><li><a href="sparx-boxing.html">SparX Boxing</a></li><li><a href="instructors.html">About Us</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>✉️ <a href="mailto:chilternacademyofma@gmail.com">chilternacademyofma@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

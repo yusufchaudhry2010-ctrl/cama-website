@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiltern Academy of Martial Arts | Boxing, Kung Fu, Tai Chi, Judo</title>
+  <meta name="description" content="Chiltern Academy of Martial Arts — Premier training in Boxing, Wing Chun Kung Fu, Tai Chi, Judo and Fitness. Classes for kids and adults across the Chilterns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+            <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link ">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link active">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="section-tag">Gallery</div>
+    <h1 class="page-hero-title"><em style="color:var(--red)">Media</em> & Action</h1>
+    <p class="page-hero-sub">Experience the training, the people, and the spirit of CAMA</p>
+  </div>
+
+  <section class="media-section" id="media-images">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 2rem; font-size: 2.5rem; text-align: left;">Photo Gallery</h2>
+      <div class="media-masonry">
+        <!-- Generate images -->
+        <div class="media-item"><img src="images/12550733-e490-453e-a3c3-837af3304075.JPG" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/2172c2e8-4672-42d1-83ba-6166e4ffb1c8.JPG" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/569919201_18345448207204285_7657117713369347374_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/570115047_18345448282204285_5134055943656707869_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/571192796_18345448171204285_622339734830428278_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/571238009_18345448216204285_7963088568420857341_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/581236206_18349439812204285_3507313815916949126_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/583698297_18349845493204285_4932316749202134843_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/585211874_1418394516954536_1357814725408411304_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/587967220_18350561863204285_8453692680389686787_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/655962964_18365329717204285_359658482346455874_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/683388362_1561567495970570_7081931025399775173_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/704507125_1580310060762980_5879331242350311653_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/716310675_18376614205204285_6805631051651093581_n.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/99a8c5bf-d6e5-49fa-b609-5fdea487771b.JPG" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/image1.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/image2.jpg" alt="CAMA Photo" loading="lazy" /></div>
+        <div class="media-item"><img src="images/temp_image_AD8CC5AC-BE52-4F56-860F-53B362482E53.WEBP" alt="CAMA Photo" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="media-section" id="media-videos" style="background: var(--dark-2);">
+    <div class="container">
+      <h2 class="section-title" style="margin-bottom: 2rem; font-size: 2.5rem; text-align: left;">Videos</h2>
+      <div class="video-grid">
+        <div class="video-item">
+          <video src="vidoes/2fdac8f2-102c-4296-838e-8bfd611b0d1c.MP4#t=1" controls playsinline preload="metadata" style="object-fit: cover;"></video>
+        </div>
+        <div class="video-item">
+          <video src="vidoes/v24044gl0000d6134v7og65p82grih0g.MP4#t=1" controls playsinline preload="metadata" style="object-fit: cover;"></video>
+        </div>
+        <div class="video-item">
+          <video src="vidoes/v24044gl0000d762me7og65pume356f0.MP4#t=1" controls playsinline preload="metadata" style="object-fit: cover;"></video>
+        </div>
+        <div class="video-item">
+          <video src="vidoes/v24044gl0000d8707lfog65s9v9aqqo0.MP4#t=1" controls playsinline preload="metadata" style="object-fit: cover;"></video>
+        </div>
+        <div class="video-item">
+          <video src="vidoes/v24044gl0000d8atj87og65l4805q9dg.MP4#t=1" controls playsinline preload="metadata" style="object-fit: cover;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand" id="footer-brand">
+        <div class="footer-logo">
+          <img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" />
+          <div>
+            <span class="footer-name">CHILTERN</span>
+            <span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Forging Warriors Since 2018</p>
+        <div class="footer-social" id="footer-social">
+          <a href="#" class="social-btn" id="footer-facebook" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" id="footer-instagram" aria-label="Instagram">in</a>
+          <a href="#" class="social-btn" id="footer-youtube" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-links-group" id="footer-classes">
+        <h4>Classes</h4>
+        <ul>
+          <li><a href="boxing.html">Boxing</a></li>
+          <li><a href="kungfu.html">Kung Fu</a></li>
+          <li><a href="taichi.html">Tai Chi</a></li>
+          <li><a href="judo.html">Judo</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group" id="footer-academy">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="bookings.html">Book Now</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact" id="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:07545991293">07545 991293</a></p>
+        <p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p>
+        <p>🕐 Classes run Wednesday, Thursday &amp; Friday</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

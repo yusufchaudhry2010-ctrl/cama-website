@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Free Trial | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Book your free trial class at Chiltern Academy of Martial Arts — Boxing, Kung Fu, Tai Chi, Judo and Fitness. Get started today!" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link ">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta active">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="bookings-section">
+    <div style="text-align:center;margin-bottom:3rem">
+      <div class="section-tag">Start Your Journey</div>
+      <h1 class="page-hero-title" style="font-size:clamp(2.5rem,6vw,4.5rem);margin-bottom:0.75rem">Book a <em style="color:var(--red)">Free Trial</em></h1>
+      <p style="font-size:0.95rem;color:var(--light-mid);max-width:500px;margin:0 auto;line-height:1.7">Fill in the form below and we'll be in touch to confirm your first class. No experience necessary — just show up!</p>
+    </div>
+
+    <div class="booking-form">
+      <h2>Your Details</h2>
+      <form id="booking-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name *</label>
+            <input class="form-control" type="text" id="first-name" name="first-name" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name *</label>
+            <input class="form-control" type="text" id="last-name" name="last-name" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input class="form-control" type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input class="form-control" type="tel" id="phone" name="phone" placeholder="07XXX XXX XXX" />
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="age-group">Age Group *</label>
+            <select class="form-control" id="age-group" name="age-group" required>
+              <option value="">Select...</option>
+              <option>Child (under 13)</option>
+              <option>Junior (13–17)</option>
+              <option>Adult (18+)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="discipline">Interested In *</label>
+            <select class="form-control" id="discipline" name="discipline" required>
+              <option value="">Select...</option>
+              <option>Boxing</option>
+              <option>Wing Chun Kung Fu</option>
+              <option>Tai Chi</option>
+              <option>Judo</option>
+              <option>Martial Fitness</option>
+              <option>Not sure — advise me!</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="experience">Martial Arts Experience</label>
+          <select class="form-control" id="experience" name="experience">
+            <option>Complete Beginner</option>
+            <option>Some Experience</option>
+            <option>Experienced Practitioner</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything Else? (Optional)</label>
+          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us anything you'd like us to know..."></textarea>
+        </div>
+        <button type="submit" class="form-submit" id="submit-booking">Book Free Trial</button>
+      </form>
+
+      <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.06);text-align:center">
+        <p style="font-size:0.85rem;color:var(--light-mid);margin-bottom:0.5rem">Or reach us directly:</p>
+        <p style="font-size:1rem;color:var(--white);font-weight:600">📞 <a href="tel:07545991293" style="color:var(--gold)">07545 991293</a></p>
+      </div>
+    </div>
+
+    <!-- What to Expect -->
+    <div style="margin-top:3rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
+      <div style="background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:1.5rem;text-align:center">
+        <div style="font-size:2rem;margin-bottom:0.75rem">🆓</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;margin-bottom:0.5rem;color:var(--white)">First Class Free</h3>
+        <p style="font-size:0.82rem;color:var(--light-mid);line-height:1.6">Your first trial class is completely free. No commitment required.</p>
+      </div>
+      <div style="background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:1.5rem;text-align:center">
+        <div style="font-size:2rem;margin-bottom:0.75rem">👕</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;margin-bottom:0.5rem;color:var(--white)">Just Show Up</h3>
+        <p style="font-size:0.82rem;color:var(--light-mid);line-height:1.6">Wear comfortable clothing. No special equipment needed for your trial.</p>
+      </div>
+      <div style="background:var(--dark-3);border:1px solid rgba(255,255,255,0.06);border-radius:var(--radius);padding:1.5rem;text-align:center">
+        <div style="font-size:2rem;margin-bottom:0.75rem">🤝</div>
+        <h3 style="font-family:var(--font-display);font-size:1.1rem;letter-spacing:1px;margin-bottom:0.5rem;color:var(--white)">All Levels Welcome</h3>
+        <p style="font-size:0.82rem;color:var(--light-mid);line-height:1.6">Complete beginners to experienced practitioners — everyone starts somewhere.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Classes</h4><ul><li><a href="boxing.html">Boxing</a></li><li><a href="kungfu.html">Kung Fu</a></li><li><a href="taichi.html">Tai Chi</a></li><li><a href="judo.html">Judo</a></li><li><a href="fitness.html">Fitness</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

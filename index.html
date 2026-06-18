@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiltern Academy of Martial Arts | Boxing, Kung Fu, Tai Chi, Judo</title>
+  <meta name="description" content="Chiltern Academy of Martial Arts — Premier training in Boxing, Wing Chun Kung Fu, Tai Chi, Judo and Fitness. Classes for kids and adults across the Chilterns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link ">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-bg slideshow">
+      <img src="images/tournament.png" alt="Martial Arts" class="hero-img slide show" />
+      <img src="images/image2.jpg" alt="Martial Arts" class="hero-img slide" />
+      <img src="frontcover.png" alt="Martial Arts" class="hero-img slide" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">Est. 2018 • Over 200 Students</div>
+      <h1 class="hero-title" id="hero-title">
+        <span class="hero-line-1">FORGE YOUR</span>
+        <span class="hero-line-2">WARRIOR SPIRIT</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        Wing Chun Kung Fu · Tai Chi · Judo · SparX Boxing · Personal Training<br />
+        Classes for children & adults across the Chilterns
+      </p>
+      <div class="hero-buttons" id="hero-buttons">
+        <a href="bookings.html" class="btn btn-primary" id="hero-book-btn">
+          <span>Start Training</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="schedule.html" class="btn btn-ghost" id="hero-schedule-btn">View Schedule</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip" id="stats">
+    <div class="stats-container">
+      <div class="stat-item" id="stat-1">
+        <div style="display:flex;align-items:flex-start;justify-content:center"><span class="stat-number" data-target="200">0</span><span class="stat-plus">+</span></div>
+        <span class="stat-label">Students</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" id="stat-2">
+        <div style="display:flex;align-items:flex-start;justify-content:center"><span class="stat-number" data-target="50">0</span><span class="stat-plus">+</span></div>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" id="stat-3">
+        <span class="stat-number" data-target="4">0</span>
+        <span class="stat-label">Class Types</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" id="stat-4">
+        <span class="stat-number" data-target="6">0</span>
+        <span class="stat-label">Expert Instructors</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col" id="about-img-col">
+          <div class="about-img-wrapper">
+            <img src="images/image2.jpg" alt="Our Dojo" class="about-dojo-img" />
+            <div class="about-img-badge">
+              <span class="badge-year">2018</span>
+              <span class="badge-text">Founded</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content-col" id="about-content-col">
+          <div class="section-tag">About CAMA</div>
+          <h2 class="section-title">A Legacy of<br /><em>Excellence</em></h2>
+          <p class="about-text">
+            The Chiltern Academy of Martial Arts was founded in 2018 by Sifu Mark Lane — a visionary with over 50 years of martial arts experience. Starting with zero students, CAMA has grown into a thriving community of over 200 dedicated practitioners.
+          </p>
+          <p class="about-text">
+            We offer world-class instruction in Wing Chun Kung Fu, Tai Chi, Kids Judo, SparX Fitness Boxing and Personal Training — taught by black belt instructors with decades of real-world experience.
+          </p>
+          <div class="about-disciplines" id="about-disciplines">
+            <div class="discipline-pill">🥋 Wing Chun Kung Fu</div>
+            <div class="discipline-pill">🌀 Tai Chi</div>
+            <div class="discipline-pill">🏆 Kids Judo</div>
+            <div class="discipline-pill">🥊 SparX Boxing</div>
+            <div class="discipline-pill">💪 Personal Training</div>
+          </div>
+          <a href="instructors.html" class="btn btn-primary" id="about-meet-btn">Meet Our Instructors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLASSES SECTION -->
+  <section class="classes-section" id="classes">
+    <div class="container">
+      <div class="section-header" id="classes-header">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Our <em>Disciplines</em></h2>
+        <p class="section-desc">World-class training across Wing Chun Kung Fu, Tai Chi, Judo, SparX Boxing and Personal Training — for all ages and abilities</p>
+      </div>
+
+      <div class="classes-grid" id="classes-grid">
+
+        <a href="adult-kungfu.html" class="class-card class-card--featured" id="class-kungfu">
+          <div class="class-card-img">
+            <img src="kungfu_class.png" alt="Kung Fu" />
+            <div class="class-card-overlay"></div>
+          </div>
+          <div class="class-card-body">
+            <div class="class-icon">🥋</div>
+            <h3 class="class-name">Wing Chun Kung Fu</h3>
+            <p class="class-desc">Southern Chinese style Kung Fu — a lineage extending back to Bruce Lee. Learn the art of the wooden dummy, chi sao and precision striking.</p>
+            <span class="class-link">Explore →</span>
+          </div>
+          <div class="featured-badge">Most Popular</div>
+        </a>
+
+        <a href="taichi.html" class="class-card" id="class-taichi">
+          <div class="class-card-img">
+            <img src="taichi_class.png" alt="Tai Chi" />
+            <div class="class-card-overlay"></div>
+          </div>
+          <div class="class-card-body">
+            <div class="class-icon">🌀</div>
+            <h3 class="class-name">Tai Chi</h3>
+            <p class="class-desc">Discover balance, harmony and health through the flowing movements of Tai Chi. "Very calming and peaceful" — perfect for all ages.</p>
+            <span class="class-link">Explore →</span>
+          </div>
+        </a>
+
+        <a href="kids-judo.html" class="class-card" id="class-judo">
+          <div class="class-card-img">
+            <img src="judo_class.png" alt="Judo" />
+            <div class="class-card-overlay"></div>
+          </div>
+          <div class="class-card-body">
+            <div class="class-icon">🏆</div>
+            <h3 class="class-name">Kids Judo</h3>
+            <p class="class-desc">Learn effective throws, pins and submissions. Build discipline, make new friends and compete at national level. Ages 7–15 welcome.</p>
+            <span class="class-link">Explore →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORS PREVIEW -->
+  <section class="instructors-section" id="instructors-preview">
+    <div class="container">
+      <div class="section-header" id="instructors-header">
+        <div class="section-tag">The Team</div>
+        <h2 class="section-title">World-Class <em>Instructors</em></h2>
+        <p class="section-desc">Led by black belts and champions with decades of real-world experience</p>
+      </div>
+      <div class="instructors-grid" id="instructors-grid">
+        <a href="instructors.html#mark" class="instructor-card" id="instr-mark">
+          <div class="instructor-img-wrap">
+            <img src="mark.jpg" alt="Mark Lane" />
+            <div class="instructor-overlay">
+              <p>Founder & Head Sifu<br />50+ years experience<br />BJC National Champion</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Mark Lane</h3>
+            <span class="instructor-role">Founder & Head Sifu</span>
+            <div class="instructor-tags">
+              <span>Wing Chun</span><span>Jeet Kune Do</span><span>Tai Chi</span>
+            </div>
+          </div>
+        </a>
+        <a href="instructors.html#karl" class="instructor-card" id="instr-karl">
+          <div class="instructor-img-wrap">
+            <img src="karl.jpg" alt="Karl Harcourt" />
+            <div class="instructor-overlay">
+              <p>The Immovable<br />Brown Sash<br />Security & Self-Defence</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Karl Harcourt</h3>
+            <span class="instructor-role">Instructor</span>
+            <div class="instructor-tags">
+              <span>Muay Thai</span><span>Judo</span><span>Jiu-Jitsu</span>
+            </div>
+          </div>
+        </a>
+        <a href="instructors.html#paul" class="instructor-card" id="instr-paul">
+          <div class="instructor-img-wrap">
+            <img src="paul.jpg" alt="Paul Brown" />
+            <div class="instructor-overlay">
+              <p>Black Sash<br />Wing Chun Kung Fu<br />Holmer Green & Hazlemere</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Paul Brown</h3>
+            <span class="instructor-role">Kung Fu Instructor</span>
+            <div class="instructor-tags">
+              <span>Wing Chun</span><span>Black Sash</span>
+            </div>
+          </div>
+        </a>
+        <a href="instructors.html#robert" class="instructor-card" id="instr-robert">
+          <div class="instructor-img-wrap">
+            <img src="robert.jpg" alt="Robert Avery" />
+            <div class="instructor-overlay">
+              <p>5th Dan Black Belt<br />Shotokan & Kyokushin<br />Kozoku Jujitsu</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Robert Avery</h3>
+            <span class="instructor-role">Instructor</span>
+            <div class="instructor-tags">
+              <span>Karate</span><span>Wing Chun</span><span>Jujitsu</span>
+            </div>
+          </div>
+        </a>
+        <a href="instructors.html#stefan" class="instructor-card" id="instr-stefan">
+          <div class="instructor-img-wrap">
+            <img src="stefan.jpg" alt="Stefan Saleem" />
+            <div class="instructor-overlay">
+              <p>Black Belt 1996<br />Tai Jitsu<br />Kids Junior Classes</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Stefan Saleem</h3>
+            <span class="instructor-role">Instructor</span>
+            <div class="instructor-tags">
+              <span>Tai Jitsu</span><span>Boxing</span><span>Wing Chun</span>
+            </div>
+          </div>
+        </a>
+        <a href="instructors.html#vic" class="instructor-card" id="instr-vic">
+          <div class="instructor-img-wrap">
+            <img src="vic.jpg" alt="Victor Webber" />
+            <div class="instructor-overlay">
+              <p>4th Dan Black Belt<br />50+ Years in Judo<br />National Kata Champion</p>
+            </div>
+          </div>
+          <div class="instructor-info">
+            <h3>Victor Webber</h3>
+            <span class="instructor-role">Judo Coach</span>
+            <div class="instructor-tags">
+              <span>Judo</span><span>4th Dan</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="section-cta" id="instructors-cta">
+        <a href="instructors.html" class="btn btn-outline" id="view-all-instructors">View All Instructors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">What They Say</div>
+        <h2 class="section-title">Student <em>Stories</em></h2>
+      </div>
+      <div class="testimonials-grid" id="testimonials-grid">
+        <div class="testimonial-card" id="test-1">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Tai chi is very calming and peaceful. The instructors are incredibly patient and knowledgeable. Best decision I ever made joining CAMA!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MB</div>
+            <div>
+              <span class="author-name">Machew Bosman</span>
+              <span class="author-class">Tai Chi Student</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test-2">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"My kids absolutely love the junior judo classes. Victor is a fantastic coach — patient, encouraging, and clearly an expert. My son can't wait for Friday classes!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SJ</div>
+            <div>
+              <span class="author-name">Sarah J.</span>
+              <span class="author-class">Parent — Junior Judo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" id="test-3">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The boxing training at CAMA has completely transformed my fitness and confidence. Sifu Mark is inspiring — you can feel his passion for the art in every session."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DK</div>
+            <div>
+              <span class="author-name">David K.</span>
+              <span class="author-class">Boxing Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" id="cta-banner">
+    <div class="cta-bg">
+      <img src="hero_banner.png" alt="" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="cta-content">
+      <h2 class="cta-title" id="cta-title">Ready to Begin Your Journey?</h2>
+      <p class="cta-subtitle">Join over 200 students training across the Chilterns</p>
+      <div class="cta-buttons" id="cta-buttons">
+        <a href="bookings.html" class="btn btn-primary btn-large" id="cta-book-btn">Book a Free Trial</a>
+        <a href="schedule.html" class="btn btn-ghost btn-large" id="cta-schedule-btn">See Schedule</a>
+      </div>
+      <p class="cta-contact">Or call us: <a href="tel:07545991293" id="cta-phone">07545 991293</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand" id="footer-brand">
+        <div class="footer-logo">
+          <img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" />
+          <div>
+            <span class="footer-name">CHILTERN</span>
+            <span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Forging Warriors Since 2018</p>
+        <div class="footer-social" id="footer-social">
+          <a href="#" class="social-btn" id="footer-facebook" aria-label="Facebook">f</a>
+          <a href="#" class="social-btn" id="footer-instagram" aria-label="Instagram">in</a>
+          <a href="#" class="social-btn" id="footer-youtube" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-links-group" id="footer-classes">
+        <h4>Classes</h4>
+        <ul>
+          <li><a href="boxing.html">Boxing</a></li>
+          <li><a href="kungfu.html">Kung Fu</a></li>
+          <li><a href="taichi.html">Tai Chi</a></li>
+          <li><a href="judo.html">Judo</a></li>
+          <li><a href="fitness.html">Fitness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group" id="footer-academy">
+        <h4>Academy</h4>
+        <ul>
+          <li><a href="instructors.html">Instructors</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="bookings.html">Book Now</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact" id="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 <a href="tel:07545991293">07545 991293</a></p>
+        <p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p>
+        <p>🕐 Classes run Wednesday, Thursday &amp; Friday</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+  </body>
+</html>

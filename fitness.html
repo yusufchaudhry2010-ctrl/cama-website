@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Martial Fitness | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Martial Fitness training at CAMA — combat-conditioning combining martial arts drills with high-intensity workouts." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link" id="nav-pt">Personal Training</a></li>
+        <li><a href="sparx-boxing.html" class="nav-link" id="nav-sparx">SparX Boxing</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link" id="nav-martial-arts">Martial Arts &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html" id="nav-adult-kf">&#x1F94B; Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html" id="nav-kids-kf">&#x1F466; Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html" id="nav-kids-judo">&#x1F3C6; Kids Judo</a></li>
+            <li><a href="taichi.html" id="nav-taichi">&#x1F300; Tai Chi</a></li>
+          </ul>
+        </li>
+        <li><a href="instructors.html" class="nav-link" id="nav-instructors">About</a></li>
+        <li><a href="schedule.html" class="nav-link" id="nav-schedule">Classes</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta" id="nav-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="fitness_class.png" alt="Martial Fitness at CAMA" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.95) 40%,rgba(10,10,10,0.35) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">💪 Combat Conditioning</div>
+      <h1 class="discipline-hero-title">FITNESS</h1>
+      <p class="discipline-hero-desc">Get the body of a warrior. High-intensity combat conditioning blending martial arts drills, strength training and cardio. No excuses.</p>
+      <a href="bookings.html" class="btn btn-primary" id="fitness-book-btn">Book a Free Trial</a>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+        <h2>Forge a Warrior's Body</h2>
+        <p>Our Martial Fitness programme is designed to build the kind of strength, endurance and explosive power that martial artists need. Combining combat drills with functional training, every session will push your limits.</p>
+        <p>Led by experienced martial artists and certified instructors, sessions include <strong style="color:var(--gold)">bag work, pad work, circuit training, battle ropes, bodyweight exercises</strong> and more.</p>
+        <p>No martial arts experience is required. Whether you're training for competition, self-defence or just to get supremely fit, this programme delivers results.</p>
+        <div style="margin-top:1.5rem">
+          <div class="about-disciplines">
+            <div class="discipline-pill">🥊 Heavy Bag Work</div>
+            <div class="discipline-pill">🎯 Pad Work</div>
+            <div class="discipline-pill">🏋️ Strength Training</div>
+            <div class="discipline-pill">🏃 HIIT Circuits</div>
+            <div class="discipline-pill">💪 Battle Ropes</div>
+            <div class="discipline-pill">🤸 Bodyweight Drills</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule-card">
+        <h3>📅 Class Schedule</h3>
+        <div class="schedule-item">
+          <span class="schedule-day">Monday</span>
+          <span class="schedule-time">6:30pm – 7:30pm</span>
+          <span class="schedule-location">Holmer Green</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Wednesday</span>
+          <span class="schedule-time">6:00pm – 7:00pm</span>
+          <span class="schedule-location">Hazlemere</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Saturday</span>
+          <span class="schedule-time">8:00am – 9:00am</span>
+          <span class="schedule-location">Early Morning Session</span>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center" id="fitness-sched-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Classes</h4><ul><li><a href="boxing.html">Boxing</a></li><li><a href="kungfu.html">Kung Fu</a></li><li><a href="taichi.html">Tai Chi</a></li><li><a href="judo.html">Judo</a></li><li><a href="fitness.html">Fitness</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

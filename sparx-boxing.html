@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparX Fitness Boxing | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="SparX Fitness Boxing at CAMA — fun boxing for fitness, not martial arts. All levels welcome. Tuesday Holmer Green Village Hall, Saturday Hazlemere Memorial Hall." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+  <nav id="navbar">
+                <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link ">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link ">Personal Training</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link active">Martial Arts ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html">🥋 Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html">👦 Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html">🏆 Kids Judo</a></li>
+            <li><a href="taichi.html">🌀 Tai Chi</a></li>
+            <li><a href="sparx-boxing.html">🥊 SparX Boxing</a></li>
+          </ul>
+        </li>
+        <li><a href="fighting.html" class="nav-link ">Fighting</a></li>
+        <li><a href="instructors.html" class="nav-link ">About</a></li>
+        <li><a href="schedule.html" class="nav-link ">Classes</a></li>
+        <li><a href="media.html" class="nav-link ">Media</a></li>
+        <li><a href="contact.html" class="nav-link ">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta ">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="boxing_class.png" alt="SparX Fitness Boxing" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 80%) 35%,rgba(10,10,10,0.1) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">🥊 Boxing for Fitness &amp; Fun</div>
+      <h1 class="discipline-hero-title">SPARX<br/>FITNESS BOXING</h1>
+      <p class="discipline-hero-desc">"I've done [ANOTHER TYPE OF FITNESS BOXING] before but it was mainly CV not boxing. This was great and also worked the brain. Loved it!"</p>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="bookings.html" class="btn btn-primary" id="sparx-book-btn">Register Interest</a>
+        <a href="tel:07545991293" class="btn btn-ghost" id="sparx-call-btn">📞 07545 991293</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+        <h2>Boxing for Fitness &amp; Fun</h2>
+
+        <div style="padding:1.5rem;background:rgba(200,16,46,0.06);border:1px solid rgba(200,16,46,0.2);border-radius:12px;margin-bottom:2rem;font-style:italic">
+          <p style="font-size:0.95rem;color:var(--light);line-height:1.7">"I've done [ANOTHER TYPE OF FITNESS BOXING] before but it was mainly CV not boxing. This was great and also worked the brain. Loved it!"</p>
+          <cite style="font-size:0.78rem;color:var(--light-mid);font-style:normal">— SparX Student</cite>
+        </div>
+
+        <p>We run <strong style="color:var(--gold)">SparX — Boxing for Fitness</strong> classes. These are <strong style="color:var(--white)">not martial arts classes</strong> but are aimed for fitness and fun in a friendly atmosphere. All levels of ability and fitness are welcome.</p>
+
+        <p>SparX combines proper boxing technique with fitness conditioning. You'll learn real punching combinations, footwork and defensive skills — but in a non-competitive, supportive group environment designed to get you fit and have fun doing it.</p>
+
+        <div style="margin-top:2rem">
+          <h3 style="font-family:var(--font-display);font-size:1.4rem;letter-spacing:2px;margin-bottom:1rem;color:var(--white)">What to Expect</h3>
+          <div class="about-disciplines">
+            <div class="discipline-pill">🥊 Real boxing technique</div>
+            <div class="discipline-pill">❤️ Cardio conditioning</div>
+            <div class="discipline-pill">🧠 Brain &amp; body workout</div>
+            <div class="discipline-pill">🤝 Friendly atmosphere</div>
+            <div class="discipline-pill">🏃 All fitness levels</div>
+            <div class="discipline-pill">🎯 Pad work &amp; bag work</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.2rem 1.5rem;background:rgba(212,160,23,0.06);border:1px solid rgba(212,160,23,0.2);border-radius:12px">
+          <p style="font-size:0.85rem;color:var(--light-mid)">For more details phone <a href="tel:07545991293" style="color:var(--gold);font-weight:700">07545 991293</a> or Email <a href="mailto:chilternacademyofma@gmail.com" style="color:var(--gold)">chilternacademyofma@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div>
+        <div style="background:linear-gradient(90deg,rgba(10,10,10,0.6) 0%,rgba(10,10,10,0) 80%),var(--dark-4));border:1px solid rgba(212,160,23,0.3);border-radius:var(--radius-lg);padding:2.5rem;margin-bottom:1.5rem">
+          <h3 style="font-family:var(--font-display);font-size:1.6rem;letter-spacing:2px;color:var(--gold);margin-bottom:1.5rem">💰 Membership</h3>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <span style="font-size:0.88rem;color:var(--light)">Monthly Membership</span>
+            <span style="color:var(--gold);font-weight:600;font-size:0.88rem">Contact us for current pricing</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0;border-bottom:1px solid rgba(255,255,255,0.06)">
+            <span style="font-size:0.88rem;color:var(--light)">CAMA Member Discount</span>
+            <span style="color:var(--gold);font-weight:700">Yes ✓</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;padding:0.9rem 0">
+            <span style="font-size:0.88rem;color:var(--light)">Personal Training Discount</span>
+            <span style="color:var(--gold);font-weight:700">Members Only</span>
+          </div>
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:1.5rem" id="sparx-price-book">Register Interest</a>
+        </div>
+
+        <div class="schedule-card">
+          <h3>📅 Class Schedule</h3>
+          <div class="schedule-item">
+            <span class="schedule-day">Tuesday</span>
+            <span class="schedule-time">6:30pm – 7:15pm</span>
+            <span class="schedule-location">Holmer Green Village Hall</span>
+          </div>
+          <div class="schedule-item">
+            <span class="schedule-day">Saturday</span>
+            <span class="schedule-time">9:30am – 10:15am</span>
+            <span class="schedule-location">Hazlemere Memorial Hall</span>
+          </div>
+          <div style="margin-top:1rem;padding:1rem;background:var(--dark-4);border-radius:8px">
+            <p style="font-size:0.8rem;color:var(--light-mid)">📞 <a href="tel:07545991293" style="color:var(--gold);font-weight:600">07545 991293</a></p>
+            <p style="font-size:0.8rem;color:var(--light-mid);margin-top:0.3rem">✉️ <a href="mailto:chilternacademyofma@gmail.com" style="color:var(--gold);font-size:0.72rem">chilternacademyofma@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Martial Arts</h4><ul><li><a href="adult-kungfu.html">Adult Kung Fu</a></li><li><a href="kids-kungfu.html">Kids Kung Fu</a></li><li><a href="kids-judo.html">Kids Judo</a></li><li><a href="taichi.html">Tai Chi</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="personal-training.html">Personal Training</a></li><li><a href="sparx-boxing.html">SparX Boxing</a></li><li><a href="instructors.html">About Us</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>✉️ <a href="mailto:chilternacademyofma@gmail.com">chilternacademyofma@gmail.com</a></p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judo | Chiltern Academy of Martial Arts</title>
+  <meta name="description" content="Judo at Chiltern Academy of Martial Arts — classes for kids and adults, taught by 4th Dan black belt Victor Webber with 50 years experience." />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" id="nav-logo-link">
+        <img src="logo.PNG" alt="CAMA Logo" class="nav-logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">CHILTERN</span>
+          <span class="logo-sub">ACADEMY OF MARTIAL ARTS</span>
+        </div>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+        <li><a href="personal-training.html" class="nav-link" id="nav-pt">Personal Training</a></li>
+        <li><a href="sparx-boxing.html" class="nav-link" id="nav-sparx">SparX Boxing</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link" id="nav-martial-arts">Martial Arts &#9662;</a>
+          <ul class="dropdown-menu">
+            <li><a href="adult-kungfu.html" id="nav-adult-kf">&#x1F94B; Adult Kung Fu</a></li>
+            <li><a href="kids-kungfu.html" id="nav-kids-kf">&#x1F466; Kids Kung Fu</a></li>
+            <li><a href="kids-judo.html" id="nav-kids-judo">&#x1F3C6; Kids Judo</a></li>
+            <li><a href="taichi.html" id="nav-taichi">&#x1F300; Tai Chi</a></li>
+          </ul>
+        </li>
+        <li><a href="instructors.html" class="nav-link" id="nav-instructors">About</a></li>
+        <li><a href="schedule.html" class="nav-link" id="nav-schedule">Classes</a></li>
+        <li><a href="contact.html" class="nav-link" id="nav-contact">Contact</a></li>
+        <li><a href="bookings.html" class="nav-link nav-cta" id="nav-book">Book Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="discipline-hero">
+    <div class="discipline-hero-bg">
+      <img src="judo_class.png" alt="Judo at CAMA" />
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,0.95) 40%,rgba(10,10,10,0.35) 100%)"></div>
+    </div>
+    <div class="discipline-hero-content">
+      <div class="section-tag">🏆 Judo · The Gentle Way</div>
+      <h1 class="discipline-hero-title">JUDO</h1>
+      <p class="discipline-hero-desc">Become a judoka. Learn effective throws, pins and submissions. Build discipline, friendships and compete at the highest level.</p>
+      <a href="bookings.html" class="btn btn-primary" id="judo-book-btn">Book a Free Trial</a>
+    </div>
+  </section>
+
+  <div class="discipline-content">
+    <div class="discipline-info-grid">
+      <div class="discipline-info-text">
+        <h2>Judo — The Gentle Way</h2>
+        <p>Judo (柔道) — "The Gentle Way" — is one of the most widely practised martial arts in the world and an Olympic sport. Our Judo programme is led by <strong style="color:var(--white)">Victor Webber</strong>, a 4th Dan black belt with over 50 years of experience who has places in the National kata championships.</p>
+        <p>Our founder, <strong style="color:var(--white)">Sifu Mark Lane</strong>, began his martial arts journey in 1972 with Judo, achieving his first black belt in 1978 and competing at the BJC National Championships. Judo is deep in CAMA's DNA.</p>
+        <p>We offer classes for both juniors and adults. Judo develops <strong style="color:var(--gold)">discipline, physical fitness, self-confidence</strong> and the ability to defend yourself effectively on the ground.</p>
+        <div style="margin-top:1.5rem">
+          <div class="about-disciplines">
+            <div class="discipline-pill">🤸 Throws (Nage-waza)</div>
+            <div class="discipline-pill">🤼 Pins (Osaekomi)</div>
+            <div class="discipline-pill">🔒 Submissions</div>
+            <div class="discipline-pill">🏅 Grading System</div>
+            <div class="discipline-pill">🥇 Competition</div>
+            <div class="discipline-pill">👦 Junior Classes</div>
+          </div>
+        </div>
+      </div>
+      <div class="schedule-card">
+        <h3>📅 Class Schedule</h3>
+        <div class="schedule-item">
+          <span class="schedule-day">Tuesday</span>
+          <span class="schedule-time">7:00pm – 9:00pm</span>
+          <span class="schedule-location">Holmer Green Sports Centre</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Friday</span>
+          <span class="schedule-time">4:30pm – 5:30pm</span>
+          <span class="schedule-location">Junior Judo Class</span>
+        </div>
+        <div class="schedule-item">
+          <span class="schedule-day">Saturday</span>
+          <span class="schedule-time">9:00am – 11:00am</span>
+          <span class="schedule-location">Competition Training</span>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="bookings.html" class="btn btn-primary" style="width:100%;justify-content:center" id="judo-sched-book">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand"><div class="footer-logo"><img src="logo.PNG" alt="CAMA" style="width:48px;height:48px;object-fit:contain;filter:drop-shadow(0 0 8px rgba(200,16,46,0.3));" /><div><span class="footer-name">CHILTERN</span><span class="footer-name-sub">ACADEMY OF MARTIAL ARTS</span></div></div><p class="footer-tagline">Forging Warriors Since 2018</p></div>
+      <div class="footer-links-group"><h4>Classes</h4><ul><li><a href="boxing.html">Boxing</a></li><li><a href="kungfu.html">Kung Fu</a></li><li><a href="taichi.html">Tai Chi</a></li><li><a href="judo.html">Judo</a></li><li><a href="fitness.html">Fitness</a></li></ul></div>
+      <div class="footer-links-group"><h4>Academy</h4><ul><li><a href="instructors.html">Instructors</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="bookings.html">Book Now</a></li></ul></div>
+      <div class="footer-contact"><h4>Contact</h4><p>📞 <a href="tel:07545991293">07545 991293</a></p><p>📍 Holmer Green, Hazlemere &amp; surrounding areas</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Chiltern Academy of Martial Arts. All rights reserved.</p></div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

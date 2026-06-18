@@ -192,17 +192,50 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ── BOOKING FORM ───────────────────────────────── */
-  const form = document.getElementById('booking-form');
-  if (form) {
-    form.addEventListener('submit', e => {
+  const bookingForm = document.getElementById('booking-form');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const btn = form.querySelector('.form-submit');
-      btn.textContent = '✓ Request Sent!';
-      btn.style.background = 'linear-gradient(135deg, #16a34a, #15803d)';
-      setTimeout(() => {
-        btn.textContent = 'Book Free Trial';
-        btn.style.background = '';
-      }, 4000);
+      
+      const firstName = document.getElementById('first-name') ? document.getElementById('first-name').value : '';
+      const lastName = document.getElementById('last-name') ? document.getElementById('last-name').value : '';
+      const email = document.getElementById('email') ? document.getElementById('email').value : '';
+      const phone = document.getElementById('phone') ? document.getElementById('phone').value : '';
+      const discipline = document.getElementById('discipline') ? document.getElementById('discipline').value : '';
+      const exp = document.getElementById('experience') ? document.getElementById('experience').value : '';
+      const msg = document.getElementById('message') ? document.getElementById('message').value : '';
+
+      const subject = 'CAMA: ' + firstName + ' ' + lastName;
+
+      // Send instantly in background via AJAX
+      fetch("https://formsubmit.co/ajax/iyusufc.buisness@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            _subject: subject,
+            _template: "box",
+            Name: firstName + ' ' + lastName,
+            Email: email,
+            Phone: phone,
+            Class: discipline,
+            Experience: exp,
+            Message: msg
+        })
+      });
+      
+      const btn = bookingForm.querySelector('.form-submit');
+      if(btn) {
+        btn.textContent = '✓ Booking Sent!';
+        btn.style.background = 'linear-gradient(135deg, #16a34a, #15803d)';
+        setTimeout(() => {
+          btn.textContent = 'Book Free Trial';
+          btn.style.background = '';
+          bookingForm.reset();
+        }, 4000);
+      }
     });
   }
 

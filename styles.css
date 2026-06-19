@@ -1755,11 +1755,22 @@ ul { list-style: none; }
   }
 
   /* Ensure padding isn't too huge on mobile */
-  .page-hero, section, div[style*="padding: 5rem"], div[style*="padding: 6rem"], div[style*="padding: 10rem"] {
+  .page-hero, section, .discipline-content, div[style*="padding: 5rem"], div[style*="padding: 6rem"], div[style*="padding: 10rem"] {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     padding-top: 4rem !important;
     padding-bottom: 3rem !important;
+  }
+
+  /* Prevent inline padding on inner cards from causing overflow */
+  div[style*="padding:2.5rem"], div[style*="padding: 2.5rem"], .schedule-card {
+    padding: 1.5rem !important;
+  }
+
+  /* Prevent long text/links (like emails) from breaking mobile layouts */
+  a, p, span, cite {
+    word-wrap: break-word !important;
+    word-break: break-word !important;
   }
 
   /* Fix timetable overflow - Convert to Card Stack on Mobile */

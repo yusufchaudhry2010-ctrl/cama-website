@@ -179,7 +179,7 @@ ul { list-style: none; }
 .dropdown { position: relative; }
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(10px);
   background: var(--dark-3);

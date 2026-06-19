@@ -1729,3 +1729,73 @@ ul { list-style: none; }
   opacity: 1;
   z-index: 1;
 }
+
+/* --- GLOBAL MOBILE HOTFIXES --- */
+@media (max-width: 768px) {
+  /* Prevent horizontal scrolling & animation breaks */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    width: 100% !important;
+  }
+
+  /* Force all inline grids to stack cleanly on mobile for perfect symmetry */
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  /* Fix massive headings on mobile */
+  h1, .page-hero-title, .hero-title {
+    font-size: clamp(2.2rem, 8vw, 3rem) !important;
+    line-height: 1.1 !important;
+  }
+  h2 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem) !important;
+  }
+
+  /* Ensure padding isn't too huge on mobile */
+  .page-hero, section, div[style*="padding: 5rem"], div[style*="padding: 6rem"], div[style*="padding: 10rem"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-top: 4rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Fix timetable overflow */
+  .schedule-table-wrap {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    width: 100% !important;
+    margin: 0 -1rem !important;
+    padding: 0 1rem !important;
+  }
+  .schedule-table {
+    min-width: 700px !important;
+  }
+
+  /* Fix image scaling & symmetry */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* Fix hero slideshow width */
+  .hero-bg, .hero-img, .slide {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+
+  /* Center buttons */
+  .cta-buttons, .hero-buttons, [style*="justify-content: center"] {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+  .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+}

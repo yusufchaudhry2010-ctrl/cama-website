@@ -1762,16 +1762,55 @@ ul { list-style: none; }
     padding-bottom: 3rem !important;
   }
 
-  /* Fix timetable overflow */
+  /* Fix timetable overflow - Convert to Card Stack on Mobile */
   .schedule-table-wrap {
-    overflow-x: auto !important;
-    -webkit-overflow-scrolling: touch !important;
+    overflow: hidden !important;
     width: 100% !important;
-    margin: 0 -1rem !important;
-    padding: 0 1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
   }
-  .schedule-table {
-    min-width: 700px !important;
+  .schedule-table, .schedule-table tbody, .schedule-table tr, .schedule-table td {
+    display: block !important;
+    width: 100% !important;
+  }
+  .schedule-table thead {
+    display: none !important;
+  }
+  .schedule-table tr {
+    margin-bottom: 1.5rem !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--dark-3) !important;
+    padding: 0.5rem 1rem !important;
+  }
+  .schedule-table td {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: right !important;
+    padding: 0.75rem 0 !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+  }
+  .schedule-table td:last-child {
+    border-bottom: none !important;
+  }
+  .schedule-table td:nth-child(1)::before { content: "Day"; }
+  .schedule-table td:nth-child(2)::before { content: "Time"; }
+  .schedule-table td:nth-child(3)::before { content: "Class"; }
+  .schedule-table td:nth-child(4)::before { content: "Level"; }
+  .schedule-table td:nth-child(5)::before { content: "Location"; }
+  .schedule-table td:nth-child(6)::before { content: "Instructor"; }
+  .schedule-table td::before {
+    font-family: var(--font-display) !important;
+    letter-spacing: 1px !important;
+    color: var(--light-mid) !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    margin-right: 1rem !important;
+    text-align: left !important;
   }
 
   /* Fix image scaling & symmetry */

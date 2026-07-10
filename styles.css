@@ -1905,7 +1905,7 @@ ul { list-style: none; }
 .product-image-back {
   opacity: 0;
 }
-.product-card:hover .product-image-front {
+.product-card.has-back-image:hover .product-image-front {
   opacity: 0;
 }
 .product-card:hover .product-image-back {

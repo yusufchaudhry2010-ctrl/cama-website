@@ -1867,8 +1867,8 @@ ul { list-style: none; }
 /* SHOP STYLES */
 .shop-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
   padding: 3rem 0;
 }
 .product-card {
@@ -1876,7 +1876,7 @@ ul { list-style: none; }
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   border: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
@@ -1884,9 +1884,8 @@ ul { list-style: none; }
   text-decoration: none;
 }
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
-  border-color: rgba(212, 160, 23, 0.5); /* Gold tint border */
+  border-color: rgba(212, 160, 23, 0.5); /* Subtle gold tint border on hover */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 .product-image-wrapper {
   position: relative;
@@ -1901,19 +1900,16 @@ ul { list-style: none; }
   width: 100%; height: 100%;
   object-fit: contain; /* Contain to show full shirt */
   padding: 1rem;
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease;
+  transition: opacity 0.3s ease-in-out;
 }
 .product-image-back {
   opacity: 0;
-  transform: scale(0.95);
 }
 .product-card:hover .product-image-front {
   opacity: 0;
-  transform: scale(1.05);
 }
 .product-card:hover .product-image-back {
   opacity: 1;
-  transform: scale(1);
 }
 .product-info {
   padding: 2rem 1.5rem;

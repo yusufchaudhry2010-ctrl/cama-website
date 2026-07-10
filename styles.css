@@ -1848,7 +1848,6 @@ ul { list-style: none; }
     height: auto !important;
     object-fit: cover !important;
   }
-  }
 
   /* Center buttons */
   .cta-buttons, .hero-buttons, [style*="justify-content: center"] {

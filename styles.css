@@ -1755,7 +1755,7 @@ ul { list-style: none; }
   }
 
   /* Ensure padding isn't too huge on mobile */
-  .page-hero, section, .discipline-content, div[style*="padding: 5rem"], div[style*="padding: 6rem"], div[style*="padding: 10rem"] {
+  .page-hero, section:not(.hero), .discipline-content, div[style*="padding: 5rem"], div[style*="padding: 6rem"], div[style*="padding: 10rem"] {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
     padding-top: 4rem !important;
@@ -2130,24 +2130,31 @@ ul { list-style: none; }
 
 /* PREMIUM MOBILE NAVIGATION SLIDEOUT */
 @media (max-width: 768px) {
+  /* Prevent hero padding on mobile and lock height to full screen */
+  .hero {
+    min-height: 100vh !important;
+    height: 100vh !important;
+    padding: 0 !important;
+  }
   .nav-links {
-    max-width: 290px !important;
+    max-width: 270px !important;
     background: rgba(10, 10, 10, 0.96) !important;
     border-left: 2px solid var(--gold) !important;
     box-shadow: -10px 0 30px rgba(0,0,0,0.5) !important;
-    padding: 3rem 2rem !important;
+    padding: 1.5rem 1.2rem !important; /* Reduced padding to fit smaller screens */
+    gap: 0.1rem !important;
   }
   .nav-links li {
     width: 100% !important;
-    margin-bottom: 0.75rem !important;
+    margin-bottom: 0.4rem !important; /* Reduced gap */
   }
   .nav-link {
-    font-size: 1.15rem !important;
+    font-size: 1.05rem !important; /* Slightly smaller text for fit */
     font-weight: 600 !important;
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
     border-bottom: 1px solid rgba(255,255,255,0.05) !important;
-    padding: 0.8rem 0.5rem !important;
+    padding: 0.6rem 0.5rem !important; /* Compact padding */
     display: block !important;
     width: 100% !important;
   }
@@ -2156,32 +2163,33 @@ ul { list-style: none; }
     color: var(--gold) !important;
   }
   .nav-link.nav-cta {
-    margin-top: 2rem !important;
+    margin-top: 1rem !important; /* Reduced margin to fit mobile viewports */
     background: var(--red) !important;
     border: none !important;
     color: var(--white) !important;
     text-align: center !important;
     font-weight: 700 !important;
     box-shadow: 0 0 15px var(--red-glow) !important;
+    padding: 0.8rem 1rem !important;
   }
   .nav-link.nav-cta:hover {
     background: var(--red-hover) !important;
   }
   .dropdown-menu {
-    margin-top: 0.5rem !important;
+    margin-top: 0.25rem !important;
     padding-left: 0.5rem !important;
   }
   .dropdown-menu li {
-    margin-bottom: 0.25rem !important;
+    margin-bottom: 0.2rem !important;
   }
   .dropdown-menu li a {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important; /* Compact size */
     font-weight: 400 !important;
     color: var(--light-mid) !important;
     text-transform: none !important;
     letter-spacing: 0.5px !important;
     border-bottom: none !important;
-    padding: 0.5rem 1rem !important;
+    padding: 0.4rem 0.8rem !important;
     display: flex !important;
     align-items: center !important;
   }

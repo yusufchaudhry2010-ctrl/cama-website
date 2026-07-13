@@ -1826,9 +1826,8 @@ ul { list-style: none; }
 
   /* Fix hero slideshow width and height */
   .hero-bg, .hero-img, .slide {
-    width: 100vw !important;
-    max-width: 100vw !important;
-    height: 100vh !important;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover !important;
   }
 
@@ -2133,8 +2132,19 @@ ul { list-style: none; }
   /* Prevent hero padding on mobile and lock height to full screen */
   .hero {
     min-height: 100vh !important;
+    min-height: 100dvh !important;
     height: 100vh !important;
+    height: 100dvh !important;
     padding: 0 !important;
+  }
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(10,10,10,0.15) 0%,
+      rgba(10,10,10,0) 30%,
+      rgba(10,10,10,0.2) 75%,
+      rgba(10,10,10,0.5) 100%
+    ) !important;
   }
   .nav-links {
     max-width: 270px !important;

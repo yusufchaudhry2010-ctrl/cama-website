@@ -2133,18 +2133,34 @@ ul { list-style: none; }
   /* Prevent hero padding on mobile and lock height to full screen */
   .hero {
     min-height: 100vh !important;
-    min-height: 100dvh !important;
+    min-height: 100svh !important;
     height: 100vh !important;
-    height: 100dvh !important;
+    height: 100svh !important;
     padding: 0 !important;
+    overflow: hidden !important;
+  }
+  .hero-bg {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .hero-img, .slide {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
   }
   .hero-overlay {
     background: linear-gradient(
       180deg,
-      rgba(10,10,10,0.15) 0%,
-      rgba(10,10,10,0) 30%,
-      rgba(10,10,10,0.2) 75%,
-      rgba(10,10,10,0.5) 100%
+      rgba(10,10,10,0.1) 0%,
+      rgba(10,10,10,0) 40%,
+      rgba(10,10,10,0.15) 80%,
+      rgba(10,10,10,0.35) 100%
     ) !important;
   }
   .nav-links {
